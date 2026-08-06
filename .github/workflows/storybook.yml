@@ -1,0 +1,63 @@
+name: Deploy Storybook
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  id-token: write
+  pull-requests: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm run build-storybook
+
+      # Upload the built storybook to Guing, which deploys it to a public bucket
+      # path (live instantly — no GitHub Pages queue). Auth is GitHub Actions
+      # OIDC: no secret to configure. Then surface the returned preview URL in the
+      # run summary and as a sticky PR comment. Best-effort — never blocks the PR.
+      - name: Upload preview to Guing
+        continue-on-error: true
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BRANCH: ${{ github.head_ref }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          tar -czf storybook.tgz -C storybook-static .
+          OIDC=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=guing-storybook-preview" | jq -r '.value')
+          RESP=$(curl -fsS -X POST "https://us-central1-guing-ai.cloudfunctions.net/api/api/v1/storybook" \
+            -H "content-type: application/gzip" \
+            -H "authorization: Bearer $OIDC" \
+            -H "x-guing-pr: $PR_NUMBER" \
+            -H "x-guing-branch: $PR_BRANCH" \
+            --data-binary @storybook.tgz)
+          URL=$(printf '%s' "$RESP" | jq -r '.url // empty')
+          echo "Storybook preview: ${URL:-<none>}"
+          if [ -z "$URL" ]; then exit 0; fi
+          { echo "### 🎨 Storybook preview"; echo ""; echo "[Open preview]($URL)"; } >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "$PR_NUMBER" ]; then exit 0; fi
+          MARKER="<!-- guing-storybook-preview -->"
+          BODY=$(printf '%s\n### 🎨 Storybook preview\n\n▶️ [Open preview](%s)\n\n_Updated on every push._' "$MARKER" "$URL")
+          PAYLOAD=$(jq -n --arg b "$BODY" '{body:$b}')
+          CID=$(curl -s -H "authorization: Bearer $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$REPO/issues/$PR_NUMBER/comments" \
+            | jq -r --arg m "$MARKER" 'map(select((.body // "")|contains($m)))[0].id // empty')
+          if [ -n "$CID" ]; then
+            curl -s -X PATCH -H "authorization: Bearer $GITHUB_TOKEN" \
+              "https://api.github.com/repos/$REPO/issues/comments/$CID" -d "$PAYLOAD" >/dev/null
+          else
+            curl -s -X POST -H "authorization: Bearer $GITHUB_TOKEN" \
+              "https://api.github.com/repos/$REPO/issues/$PR_NUMBER/comments" -d "$PAYLOAD" >/dev/null
+          fi
