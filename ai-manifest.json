@@ -1,21 +1,21 @@
 {
-  "version": "0.0.0",
-  "generatedAt": "2026-08-06T08:48:45.333Z",
+  "version": "0.0.1",
+  "generatedAt": "2026-08-06T08:49:36.659Z",
   "components": [],
   "tokens": {
-    "colors": 0,
-    "gradients": 0,
-    "typography": 0,
-    "radius": 0,
-    "shadows": 0,
+    "colors": 28,
+    "typography": 21,
+    "radius": 12,
+    "shadows": 1,
     "elevations": 0,
     "borders": 0,
-    "gaps": 0,
-    "sizes": 0,
+    "gaps": 12,
+    "sizes": 9,
     "opacity": 0,
+    "gradients": 0,
     "blurs": 0,
     "layoutGrids": 0,
-    "figmaStyles": 0,
+    "figmaStyles": 15,
     "icons": 0
   }
 }
