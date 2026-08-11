@@ -30,6 +30,7 @@ export const semanticColorVars = {
   surface: 'var(--color-surface)',
   textMain: 'var(--color-text-main)',
   textMuted: 'var(--color-text-muted)',
+  borderDivider: 'var(--color-border-divider)',
 } as const;
 
 // ─── Radius ──────────────────────────────────────────────────────────────────

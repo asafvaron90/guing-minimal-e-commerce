@@ -60,18 +60,28 @@ export const tokens = {
       "category": "Variables"
     },
     {
+      "name": "Color/000000",
+      "value": "#000000",
+      "category": "Variables"
+    },
+    {
       "name": "Brand 500",
-      "value": "#FA254C",
+      "value": "#212429",
       "category": "Variables"
     },
     {
       "name": "Action Primary",
-      "value": "#FA254C",
+      "value": "#212429",
       "category": "Variables"
     },
     {
       "name": "Action Secondary",
-      "value": "#868D94",
+      "value": "#F5F5F5",
+      "category": "Variables"
+    },
+    {
+      "name": "Danger 500",
+      "value": "#FA254C",
       "category": "Variables"
     },
     {
@@ -81,7 +91,7 @@ export const tokens = {
     },
     {
       "name": "Surface",
-      "value": "#F5F5F5",
+      "value": "#495057",
       "category": "Variables"
     },
     {
@@ -91,22 +101,27 @@ export const tokens = {
     },
     {
       "name": "Text Muted",
+      "value": "#868D94",
+      "category": "Variables"
+    },
+    {
+      "name": "Border Divider",
       "value": "#B0B5B9",
       "category": "Variables"
     },
     {
       "name": "Brand 100",
-      "value": "#FEDEE4",
+      "value": "#DEDEDF",
       "category": "Semantic"
     },
     {
       "name": "Brand 300",
-      "value": "#FC7C94",
+      "value": "#7A7C7F",
       "category": "Semantic"
     },
     {
       "name": "Brand 700",
-      "value": "#BC1C39",
+      "value": "#191B1F",
       "category": "Semantic"
     },
     {
@@ -132,16 +147,6 @@ export const tokens = {
     {
       "name": "Warning 500",
       "value": "#f59e0b",
-      "category": "Semantic"
-    },
-    {
-      "name": "Danger 500",
-      "value": "#ef4444",
-      "category": "Semantic"
-    },
-    {
-      "name": "Border Divider",
-      "value": "#e5e7eb",
       "category": "Semantic"
     }
   ],
@@ -267,6 +272,15 @@ export const tokens = {
       "name": "Caption/Caption 2",
       "fontFamily": "Inter",
       "fontSize": 10,
+      "fontWeight": 600,
+      "fontStyle": "normal",
+      "lineHeight": "normal",
+      "letterSpacing": 0
+    },
+    {
+      "name": "Typography/Inter-Semi Bold-9",
+      "fontFamily": "Inter",
+      "fontSize": 9,
       "fontWeight": 600,
       "fontStyle": "normal",
       "lineHeight": "normal",
@@ -410,16 +424,25 @@ export const tokens = {
       "category": "Radius"
     },
     {
-      "name": "Small",
-      "value": 2,
-      "topLeft": 2,
-      "topRight": 2,
-      "bottomRight": 2,
-      "bottomLeft": 2,
-      "category": "Radius"
+      "name": "Radius/23",
+      "value": 23,
+      "topLeft": 23,
+      "topRight": 23,
+      "bottomRight": 23,
+      "bottomLeft": 23,
+      "category": "Guing Exact Values"
     },
     {
-      "name": "Medium",
+      "name": "Radius/21",
+      "value": 21,
+      "topLeft": 21,
+      "topRight": 21,
+      "bottomRight": 21,
+      "bottomLeft": 21,
+      "category": "Guing Exact Values"
+    },
+    {
+      "name": "Small",
       "value": 4,
       "topLeft": 4,
       "topRight": 4,
@@ -428,12 +451,21 @@ export const tokens = {
       "category": "Radius"
     },
     {
-      "name": "Large",
+      "name": "Medium",
       "value": 8,
       "topLeft": 8,
       "topRight": 8,
       "bottomRight": 8,
       "bottomLeft": 8,
+      "category": "Radius"
+    },
+    {
+      "name": "Large",
+      "value": 12,
+      "topLeft": 12,
+      "topRight": 12,
+      "bottomRight": 12,
+      "bottomLeft": 12,
       "category": "Radius"
     },
     {
@@ -506,6 +538,21 @@ export const tokens = {
       "name": "Space/7XL",
       "value": 96,
       "category": "Spacing"
+    },
+    {
+      "name": "Space/10",
+      "value": 10,
+      "category": "Guing Exact Values"
+    },
+    {
+      "name": "Space/9",
+      "value": 9,
+      "category": "Guing Exact Values"
+    },
+    {
+      "name": "Space/27",
+      "value": 27,
+      "category": "Guing Exact Values"
     }
   ],
   "sizes": [
@@ -893,6 +940,54 @@ export const tokens = {
       "collectionName": "Opacity",
       "groupName": "Opacity",
       "variableId": "VariableID:410:887"
+    },
+    {
+      "name": "Radius/23",
+      "resolvedType": "FLOAT",
+      "value": "23",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Radius",
+      "variableId": "VariableID:447:797"
+    },
+    {
+      "name": "Space/10",
+      "resolvedType": "FLOAT",
+      "value": "10",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Space",
+      "variableId": "VariableID:447:798"
+    },
+    {
+      "name": "Space/9",
+      "resolvedType": "FLOAT",
+      "value": "9",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Space",
+      "variableId": "VariableID:447:858"
+    },
+    {
+      "name": "Space/27",
+      "resolvedType": "FLOAT",
+      "value": "27",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Space",
+      "variableId": "VariableID:447:859"
+    },
+    {
+      "name": "Radius/21",
+      "resolvedType": "FLOAT",
+      "value": "21",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Radius",
+      "variableId": "VariableID:447:860"
+    },
+    {
+      "name": "Color/000000",
+      "resolvedType": "COLOR",
+      "value": "#000000",
+      "collectionName": "Guing Exact Values",
+      "groupName": "Color",
+      "variableId": "VariableID:447:862"
     }
   ],
   "figmaStyles": [
@@ -1314,6 +1409,35 @@ export const tokens = {
       }
     },
     {
+      "id": "S:6ea087f9a47b5d9334fbd12d1b262798f1fb1218,",
+      "key": "6ea087f9a47b5d9334fbd12d1b262798f1fb1218",
+      "name": "Typography/Inter-Semi Bold-9",
+      "description": "",
+      "styleType": "TEXT",
+      "definition": {
+        "boundVariables": {},
+        "fontName": {
+          "family": "Inter",
+          "style": "Semi Bold"
+        },
+        "fontSize": 9,
+        "hangingList": false,
+        "hangingPunctuation": false,
+        "letterSpacing": {
+          "unit": "PERCENT",
+          "value": 0
+        },
+        "lineHeight": {
+          "unit": "AUTO"
+        },
+        "listSpacing": 0,
+        "paragraphIndent": 0,
+        "paragraphSpacing": 0,
+        "textCase": "ORIGINAL",
+        "textDecoration": "NONE"
+      }
+    },
+    {
       "id": "S:d636529ebf45c09985257fd02cfd848f1694e7b9,",
       "key": "d636529ebf45c09985257fd02cfd848f1694e7b9",
       "name": "DropShadow",
@@ -1346,34 +1470,34 @@ export const tokens = {
   ],
   "aliases": {
     "colors": {
-      "primary": "Content/Sale",
-      "secondary": "Content/Secondary",
+      "primary": "Background/Accent",
+      "secondary": "Background/Secondary",
       "success": "",
       "warning": "",
-      "danger": "",
+      "danger": "Content/Sale",
       "background": "Background/Primary",
-      "surface": "Background/Secondary",
+      "surface": "Background/Tertiary",
       "textMain": "Content/Primary",
-      "textMuted": "Content/Tertiary",
-      "borderDivider": ""
+      "textMuted": "Content/Secondary",
+      "borderDivider": "Content/Tertiary"
     },
     "typography": {
       "heading1": "Heading/Heading 1",
       "heading2": "Heading/Heading 2, Extrabold",
       "heading3": "Heading/Heading 3, Extrabold",
-      "heading4": "",
+      "heading4": "Heading/Heading 3, Medium",
       "bodyLarge": "Body/Body 3",
       "bodyRegular": "Body/Body 1",
       "bodySmall": "Body/Body 2, Medium",
       "caption": "Caption/Caption 1",
-      "label": "",
+      "label": "Typography/Inter-Semi Bold-9",
       "code": ""
     },
     "radii": {
       "none": "Radius/None",
-      "small": "Radius/XS",
-      "medium": "Radius/S",
-      "large": "Radius/M",
+      "small": "Radius/S",
+      "medium": "Radius/M",
+      "large": "Radius/L",
       "round": "Radius/Full"
     },
     "shadows": {
@@ -1433,26 +1557,32 @@ export const designTokens = {
     contentOnColorInverse: "#FFFFFF",
     /** #FA254C */
     contentSale: "#FA254C",
+    /** #000000 */
+    color000000: "#000000",
+    /** #212429 */
+    brand500: "#212429",
+    /** #212429 */
+    actionPrimary: "#212429",
+    /** #F5F5F5 */
+    actionSecondary: "#F5F5F5",
     /** #FA254C */
-    brand500: "#FA254C",
-    /** #FA254C */
-    actionPrimary: "#FA254C",
-    /** #868D94 */
-    actionSecondary: "#868D94",
+    danger500: "#FA254C",
     /** #FFFFFF */
     background: "#FFFFFF",
-    /** #F5F5F5 */
-    surface: "#F5F5F5",
+    /** #495057 */
+    surface: "#495057",
     /** #212429 */
     textMain: "#212429",
+    /** #868D94 */
+    textMuted: "#868D94",
     /** #B0B5B9 */
-    textMuted: "#B0B5B9",
-    /** #FEDEE4 */
-    brand100: "#FEDEE4",
-    /** #FC7C94 */
-    brand300: "#FC7C94",
-    /** #BC1C39 */
-    brand700: "#BC1C39",
+    borderDivider: "#B0B5B9",
+    /** #DEDEDF */
+    brand100: "#DEDEDF",
+    /** #7A7C7F */
+    brand300: "#7A7C7F",
+    /** #191B1F */
+    brand700: "#191B1F",
     /** #FFFFFF */
     white: "#FFFFFF",
     /** #000000 */
@@ -1463,10 +1593,6 @@ export const designTokens = {
     success500: "#22c55e",
     /** #f59e0b */
     warning500: "#f59e0b",
-    /** #ef4444 */
-    danger500: "#ef4444",
-    /** #e5e7eb */
-    borderDivider: "#e5e7eb",
   },
   typography: {
     headingHeading1: {
@@ -1567,7 +1693,7 @@ export const designTokens = {
     },
     captionCaption1: {
       fontFamily: "Inter",
-      fontSize: 10,
+      fontSize: 10, /* Space/10 */
       fontWeight: 400,
       fontStyle: "normal",
       lineHeight: 12, /* Opacity/Focus */
@@ -1575,7 +1701,15 @@ export const designTokens = {
     },
     captionCaption2: {
       fontFamily: "Inter",
-      fontSize: 10,
+      fontSize: 10, /* Space/10 */
+      fontWeight: 600,
+      fontStyle: "normal",
+      lineHeight: "normal",
+      letterSpacing: 0,
+    },
+    typographyInterSemiBold9: {
+      fontFamily: "Inter",
+      fontSize: 9, /* Space/9 */
       fontWeight: 600,
       fontStyle: "normal",
       lineHeight: "normal",
@@ -1631,7 +1765,7 @@ export const designTokens = {
     },
     caption: {
       fontFamily: "Inter",
-      fontSize: 10,
+      fontSize: 10, /* Space/10 */
       fontWeight: 400,
       fontStyle: "normal",
       lineHeight: 12, /* Opacity/Focus */
@@ -1647,9 +1781,11 @@ export const designTokens = {
     radiusXL: { topLeft: 16, topRight: 16, bottomRight: 16, bottomLeft: 16 },
     radius2XL: { topLeft: 24, topRight: 24, bottomRight: 24, bottomLeft: 24 },
     radiusFull: { topLeft: 999, topRight: 999, bottomRight: 999, bottomLeft: 999 },
-    small: { topLeft: 2, topRight: 2, bottomRight: 2, bottomLeft: 2 },
-    medium: { topLeft: 4, topRight: 4, bottomRight: 4, bottomLeft: 4 },
-    large: { topLeft: 8, topRight: 8, bottomRight: 8, bottomLeft: 8 },
+    radius23: { topLeft: 23, topRight: 23, bottomRight: 23, bottomLeft: 23 },
+    radius21: { topLeft: 21, topRight: 21, bottomRight: 21, bottomLeft: 21 },
+    small: { topLeft: 4, topRight: 4, bottomRight: 4, bottomLeft: 4 },
+    medium: { topLeft: 8, topRight: 8, bottomRight: 8, bottomLeft: 8 },
+    large: { topLeft: 12, topRight: 12, bottomRight: 12, bottomLeft: 12 },
     round: { topLeft: 999, topRight: 999, bottomRight: 999, bottomLeft: 999 },
   },
   shadows: {
@@ -1668,6 +1804,9 @@ export const designTokens = {
     space5XL: 64,
     space6XL: 80,
     space7XL: 96,
+    space10: 10,
+    space9: 9,
+    space27: 27,
   },
   sizes: {
     borderNone: 0,
@@ -1680,7 +1819,7 @@ export const designTokens = {
     opacityDisabled: 38,
     opacityOverlay: 50,
   },
-  figmaStyles: [{"id":"S:7dea46d4fbc17f5314b34bc142ccdd101f9f150e,","key":"7dea46d4fbc17f5314b34bc142ccdd101f9f150e","name":"Heading/Heading 1","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":32,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:1d3b8cfe90c994e42d9820f088bd7c4d1d77b09c,","key":"1d3b8cfe90c994e42d9820f088bd7c4d1d77b09c","name":"Heading/Heading 2, Extrabold","description":"Price (Product Page)","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Extra Bold"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:097fc741c7b9cafd261d2e62867c26d13d6d4b89,","key":"097fc741c7b9cafd261d2e62867c26d13d6d4b89","name":"Heading/Heading 2, Semibold","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:08b48d049e29242f8f7fe10ea449456a0c2bb433,","key":"08b48d049e29242f8f7fe10ea449456a0c2bb433","name":"Heading/Heading 2, Strikethrough","description":"Old Price (Product Page)","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"STRIKETHROUGH"}},{"id":"S:1d7f576b982aaaf7a9fa621c5eb3e429f7128422,","key":"1d7f576b982aaaf7a9fa621c5eb3e429f7128422","name":"Heading/Heading 3, Extrabold","description":"i.e prices","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Extra Bold"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:2005eaa8ace5c2cea47ecb6f8ba60583f5275b8f,","key":"2005eaa8ace5c2cea47ecb6f8ba60583f5275b8f","name":"Heading/Heading 3, Bold","description":"i.e. brand","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Bold"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:e025dc255e987b915e41c498b57acf6c423bbd50,","key":"e025dc255e987b915e41c498b57acf6c423bbd50","name":"Heading/Heading 3, Medium","description":"i.e. product","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Medium"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":16},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:ff2ba37dc1e32ae57088bfb67ce0ca664159d0b8,","key":"ff2ba37dc1e32ae57088bfb67ce0ca664159d0b8","name":"Body/Body 1","description":"Product Description","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PIXELS","value":0},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:a739ee30a5a723cb47247ee61038f5489a79be26,","key":"a739ee30a5a723cb47247ee61038f5489a79be26","name":"Body/Body 2, Medium","description":"Labels, smaller text","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Medium"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:23adf1517e58e8edbcbe4a05b80bd5132468e71f,","key":"23adf1517e58e8edbcbe4a05b80bd5132468e71f","name":"Body/Body 2, Bold","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Bold"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:dab3b695a67f8f781967842b8e35c8dcb315736f,","key":"dab3b695a67f8f781967842b8e35c8dcb315736f","name":"Body/Body 2, Striketrouhjt","description":"Old Price","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"STRIKETHROUGH"}},{"id":"S:be221bd8845f333389d474a81d9b13407a211265,","key":"be221bd8845f333389d474a81d9b13407a211265","name":"Body/Body 3","description":"Search bar","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":16,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":16},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:7010b3481b35fa419b8ce31cc094c96cd16c5791,","key":"7010b3481b35fa419b8ce31cc094c96cd16c5791","name":"Caption/Caption 1","description":"Product subtitle, ...","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":10,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":12},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:5cdabc8cc34435ff9146ea1590a4be1fb1d24445,","key":"5cdabc8cc34435ff9146ea1590a4be1fb1d24445","name":"Caption/Caption 2","description":"Navbar icon description","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":10,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:d636529ebf45c09985257fd02cfd848f1694e7b9,","key":"d636529ebf45c09985257fd02cfd848f1694e7b9","name":"DropShadow","description":"","styleType":"EFFECT","definition":{"effects":[{"blendMode":"NORMAL","boundVariables":{},"color":{"a":0.699999988079071,"b":0.580916702747345,"g":0.5541666746139526,"r":0.5274166464805603},"offset":{"x":49,"y":100},"radius":100,"showShadowBehindNode":false,"spread":0,"type":"DROP_SHADOW","visible":true}]}}],
+  figmaStyles: [{"id":"S:7dea46d4fbc17f5314b34bc142ccdd101f9f150e,","key":"7dea46d4fbc17f5314b34bc142ccdd101f9f150e","name":"Heading/Heading 1","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":32,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:1d3b8cfe90c994e42d9820f088bd7c4d1d77b09c,","key":"1d3b8cfe90c994e42d9820f088bd7c4d1d77b09c","name":"Heading/Heading 2, Extrabold","description":"Price (Product Page)","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Extra Bold"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:097fc741c7b9cafd261d2e62867c26d13d6d4b89,","key":"097fc741c7b9cafd261d2e62867c26d13d6d4b89","name":"Heading/Heading 2, Semibold","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:08b48d049e29242f8f7fe10ea449456a0c2bb433,","key":"08b48d049e29242f8f7fe10ea449456a0c2bb433","name":"Heading/Heading 2, Strikethrough","description":"Old Price (Product Page)","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":20,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":-1},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"STRIKETHROUGH"}},{"id":"S:1d7f576b982aaaf7a9fa621c5eb3e429f7128422,","key":"1d7f576b982aaaf7a9fa621c5eb3e429f7128422","name":"Heading/Heading 3, Extrabold","description":"i.e prices","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Extra Bold"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:2005eaa8ace5c2cea47ecb6f8ba60583f5275b8f,","key":"2005eaa8ace5c2cea47ecb6f8ba60583f5275b8f","name":"Heading/Heading 3, Bold","description":"i.e. brand","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Bold"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:e025dc255e987b915e41c498b57acf6c423bbd50,","key":"e025dc255e987b915e41c498b57acf6c423bbd50","name":"Heading/Heading 3, Medium","description":"i.e. product","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Medium"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":16},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:ff2ba37dc1e32ae57088bfb67ce0ca664159d0b8,","key":"ff2ba37dc1e32ae57088bfb67ce0ca664159d0b8","name":"Body/Body 1","description":"Product Description","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":14,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PIXELS","value":0},"lineHeight":{"unit":"PIXELS","value":20},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:a739ee30a5a723cb47247ee61038f5489a79be26,","key":"a739ee30a5a723cb47247ee61038f5489a79be26","name":"Body/Body 2, Medium","description":"Labels, smaller text","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Medium"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:23adf1517e58e8edbcbe4a05b80bd5132468e71f,","key":"23adf1517e58e8edbcbe4a05b80bd5132468e71f","name":"Body/Body 2, Bold","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Bold"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:dab3b695a67f8f781967842b8e35c8dcb315736f,","key":"dab3b695a67f8f781967842b8e35c8dcb315736f","name":"Body/Body 2, Striketrouhjt","description":"Old Price","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":12,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":14},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"STRIKETHROUGH"}},{"id":"S:be221bd8845f333389d474a81d9b13407a211265,","key":"be221bd8845f333389d474a81d9b13407a211265","name":"Body/Body 3","description":"Search bar","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":16,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":16},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:7010b3481b35fa419b8ce31cc094c96cd16c5791,","key":"7010b3481b35fa419b8ce31cc094c96cd16c5791","name":"Caption/Caption 1","description":"Product subtitle, ...","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Regular"},"fontSize":10,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"PIXELS","value":12},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":4,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:5cdabc8cc34435ff9146ea1590a4be1fb1d24445,","key":"5cdabc8cc34435ff9146ea1590a4be1fb1d24445","name":"Caption/Caption 2","description":"Navbar icon description","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":10,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:6ea087f9a47b5d9334fbd12d1b262798f1fb1218,","key":"6ea087f9a47b5d9334fbd12d1b262798f1fb1218","name":"Typography/Inter-Semi Bold-9","description":"","styleType":"TEXT","definition":{"boundVariables":{},"fontName":{"family":"Inter","style":"Semi Bold"},"fontSize":9,"hangingList":false,"hangingPunctuation":false,"letterSpacing":{"unit":"PERCENT","value":0},"lineHeight":{"unit":"AUTO"},"listSpacing":0,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"ORIGINAL","textDecoration":"NONE"}},{"id":"S:d636529ebf45c09985257fd02cfd848f1694e7b9,","key":"d636529ebf45c09985257fd02cfd848f1694e7b9","name":"DropShadow","description":"","styleType":"EFFECT","definition":{"effects":[{"blendMode":"NORMAL","boundVariables":{},"color":{"a":0.699999988079071,"b":0.580916702747345,"g":0.5541666746139526,"r":0.5274166464805603},"offset":{"x":49,"y":100},"radius":100,"showShadowBehindNode":false,"spread":0,"type":"DROP_SHADOW","visible":true}]}}],
 } as const;
 
 export type DesignTokens = typeof designTokens;
