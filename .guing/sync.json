@@ -1,6 +1,6 @@
 {
-  "version": "0.0.1",
-  "tokensHash": "b484b0df0b58",
+  "version": "0.0.2",
+  "tokensHash": "e347d6c2f444",
   "tokens": {
     "colors": [
       {
@@ -56,6 +56,11 @@
       {
         "name": "Content/Sale",
         "value": "#FA254C",
+        "category": "Variables"
+      },
+      {
+        "name": "Color/000000",
+        "value": "#000000",
         "category": "Variables"
       }
     ],
@@ -185,6 +190,15 @@
         "fontStyle": "normal",
         "lineHeight": "normal",
         "letterSpacing": 0
+      },
+      {
+        "name": "Typography/Inter-Semi Bold-9",
+        "fontFamily": "Inter",
+        "fontSize": 9,
+        "fontWeight": 600,
+        "fontStyle": "normal",
+        "lineHeight": "normal",
+        "letterSpacing": 0
       }
     ],
     "radius": [
@@ -259,6 +273,24 @@
         "bottomRight": 999,
         "bottomLeft": 999,
         "category": "Radius"
+      },
+      {
+        "name": "Radius/23",
+        "value": 23,
+        "topLeft": 23,
+        "topRight": 23,
+        "bottomRight": 23,
+        "bottomLeft": 23,
+        "category": "Guing Exact Values"
+      },
+      {
+        "name": "Radius/21",
+        "value": 21,
+        "topLeft": 21,
+        "topRight": 21,
+        "bottomRight": 21,
+        "bottomLeft": 21,
+        "category": "Guing Exact Values"
       }
     ],
     "gaps": [
@@ -321,6 +353,21 @@
         "name": "Space/7XL",
         "value": 96,
         "category": "Spacing"
+      },
+      {
+        "name": "Space/10",
+        "value": 10,
+        "category": "Guing Exact Values"
+      },
+      {
+        "name": "Space/9",
+        "value": 9,
+        "category": "Guing Exact Values"
+      },
+      {
+        "name": "Space/27",
+        "value": 27,
+        "category": "Guing Exact Values"
       }
     ],
     "sizes": [
@@ -708,6 +755,54 @@
         "collectionName": "Opacity",
         "groupName": "Opacity",
         "variableId": "VariableID:410:887"
+      },
+      {
+        "name": "Radius/23",
+        "resolvedType": "FLOAT",
+        "value": "23",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Radius",
+        "variableId": "VariableID:447:797"
+      },
+      {
+        "name": "Space/10",
+        "resolvedType": "FLOAT",
+        "value": "10",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Space",
+        "variableId": "VariableID:447:798"
+      },
+      {
+        "name": "Space/9",
+        "resolvedType": "FLOAT",
+        "value": "9",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Space",
+        "variableId": "VariableID:447:858"
+      },
+      {
+        "name": "Space/27",
+        "resolvedType": "FLOAT",
+        "value": "27",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Space",
+        "variableId": "VariableID:447:859"
+      },
+      {
+        "name": "Radius/21",
+        "resolvedType": "FLOAT",
+        "value": "21",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Radius",
+        "variableId": "VariableID:447:860"
+      },
+      {
+        "name": "Color/000000",
+        "resolvedType": "COLOR",
+        "value": "#000000",
+        "collectionName": "Guing Exact Values",
+        "groupName": "Color",
+        "variableId": "VariableID:447:862"
       }
     ],
     "figmaStyles": [
@@ -1112,6 +1207,35 @@
             "style": "Semi Bold"
           },
           "fontSize": 10,
+          "hangingList": false,
+          "hangingPunctuation": false,
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "lineHeight": {
+            "unit": "AUTO"
+          },
+          "listSpacing": 0,
+          "paragraphIndent": 0,
+          "paragraphSpacing": 0,
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE"
+        }
+      },
+      {
+        "id": "S:6ea087f9a47b5d9334fbd12d1b262798f1fb1218,",
+        "key": "6ea087f9a47b5d9334fbd12d1b262798f1fb1218",
+        "name": "Typography/Inter-Semi Bold-9",
+        "description": "",
+        "styleType": "TEXT",
+        "definition": {
+          "boundVariables": {},
+          "fontName": {
+            "family": "Inter",
+            "style": "Semi Bold"
+          },
+          "fontSize": 9,
           "hangingList": false,
           "hangingPunctuation": false,
           "letterSpacing": {

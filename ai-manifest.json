@@ -1,21 +1,21 @@
 {
-  "version": "0.0.1",
-  "generatedAt": "2026-08-06T08:49:36.659Z",
+  "version": "0.0.2",
+  "generatedAt": "2026-08-11T20:07:16.289Z",
   "components": [],
   "tokens": {
-    "colors": 28,
-    "typography": 21,
-    "radius": 12,
+    "colors": 29,
+    "typography": 22,
+    "radius": 14,
     "shadows": 1,
     "elevations": 0,
     "borders": 0,
-    "gaps": 12,
+    "gaps": 15,
     "sizes": 9,
     "opacity": 0,
     "gradients": 0,
     "blurs": 0,
     "layoutGrids": 0,
-    "figmaStyles": 15,
+    "figmaStyles": 16,
     "icons": 0
   }
 }
