@@ -23,7 +23,6 @@ module.exports = {
     "brand-500": "var(--color-brand-500)",
     "action-primary": "var(--color-action-primary)",
     "action-secondary": "var(--color-action-secondary)",
-    "danger-500": "var(--color-danger-500)",
     "background": "var(--color-background)",
     "surface": "var(--color-surface)",
     "text-main": "var(--color-text-main)",
@@ -37,6 +36,7 @@ module.exports = {
     "neutral-300": "var(--color-neutral-300)",
     "success-500": "var(--color-success-500)",
     "warning-500": "var(--color-warning-500)",
+    "danger-500": "var(--color-danger-500)",
       },
       fontFamily: {
     "inter": ["Inter", "sans-serif"],

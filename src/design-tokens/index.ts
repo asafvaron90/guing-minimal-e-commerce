@@ -66,22 +66,17 @@ export const tokens = {
     },
     {
       "name": "Brand 500",
-      "value": "#212429",
+      "value": "#FA254C",
       "category": "Variables"
     },
     {
       "name": "Action Primary",
-      "value": "#212429",
+      "value": "#FA254C",
       "category": "Variables"
     },
     {
       "name": "Action Secondary",
-      "value": "#F5F5F5",
-      "category": "Variables"
-    },
-    {
-      "name": "Danger 500",
-      "value": "#FA254C",
+      "value": "#212429",
       "category": "Variables"
     },
     {
@@ -91,7 +86,7 @@ export const tokens = {
     },
     {
       "name": "Surface",
-      "value": "#495057",
+      "value": "#F5F5F5",
       "category": "Variables"
     },
     {
@@ -106,22 +101,22 @@ export const tokens = {
     },
     {
       "name": "Border Divider",
-      "value": "#B0B5B9",
+      "value": "#495057",
       "category": "Variables"
     },
     {
       "name": "Brand 100",
-      "value": "#DEDEDF",
+      "value": "#FEDEE4",
       "category": "Semantic"
     },
     {
       "name": "Brand 300",
-      "value": "#7A7C7F",
+      "value": "#FC7C94",
       "category": "Semantic"
     },
     {
       "name": "Brand 700",
-      "value": "#191B1F",
+      "value": "#BC1C39",
       "category": "Semantic"
     },
     {
@@ -147,6 +142,11 @@ export const tokens = {
     {
       "name": "Warning 500",
       "value": "#f59e0b",
+      "category": "Semantic"
+    },
+    {
+      "name": "Danger 500",
+      "value": "#ef4444",
       "category": "Semantic"
     }
   ],
@@ -1470,16 +1470,16 @@ export const tokens = {
   ],
   "aliases": {
     "colors": {
-      "primary": "Background/Accent",
-      "secondary": "Background/Secondary",
+      "primary": "Content/Sale",
+      "secondary": "Background/Accent",
       "success": "",
       "warning": "",
-      "danger": "Content/Sale",
+      "danger": "",
       "background": "Background/Primary",
-      "surface": "Background/Tertiary",
+      "surface": "Background/Secondary",
       "textMain": "Content/Primary",
       "textMuted": "Content/Secondary",
-      "borderDivider": "Content/Tertiary"
+      "borderDivider": "Background/Tertiary"
     },
     "typography": {
       "heading1": "Heading/Heading 1",
@@ -1559,30 +1559,28 @@ export const designTokens = {
     contentSale: "#FA254C",
     /** #000000 */
     color000000: "#000000",
-    /** #212429 */
-    brand500: "#212429",
-    /** #212429 */
-    actionPrimary: "#212429",
-    /** #F5F5F5 */
-    actionSecondary: "#F5F5F5",
     /** #FA254C */
-    danger500: "#FA254C",
+    brand500: "#FA254C",
+    /** #FA254C */
+    actionPrimary: "#FA254C",
+    /** #212429 */
+    actionSecondary: "#212429",
     /** #FFFFFF */
     background: "#FFFFFF",
-    /** #495057 */
-    surface: "#495057",
+    /** #F5F5F5 */
+    surface: "#F5F5F5",
     /** #212429 */
     textMain: "#212429",
     /** #868D94 */
     textMuted: "#868D94",
-    /** #B0B5B9 */
-    borderDivider: "#B0B5B9",
-    /** #DEDEDF */
-    brand100: "#DEDEDF",
-    /** #7A7C7F */
-    brand300: "#7A7C7F",
-    /** #191B1F */
-    brand700: "#191B1F",
+    /** #495057 */
+    borderDivider: "#495057",
+    /** #FEDEE4 */
+    brand100: "#FEDEE4",
+    /** #FC7C94 */
+    brand300: "#FC7C94",
+    /** #BC1C39 */
+    brand700: "#BC1C39",
     /** #FFFFFF */
     white: "#FFFFFF",
     /** #000000 */
@@ -1593,6 +1591,8 @@ export const designTokens = {
     success500: "#22c55e",
     /** #f59e0b */
     warning500: "#f59e0b",
+    /** #ef4444 */
+    danger500: "#ef4444",
   },
   typography: {
     headingHeading1: {
