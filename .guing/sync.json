@@ -1284,5 +1284,36 @@
       }
     ]
   },
-  "components": []
+  "components": [
+    {
+      "key": "testcard",
+      "name": "TestCard",
+      "type": "TestCard",
+      "label": "TestCard",
+      "layerId": "61:306",
+      "variants": 0,
+      "path": "src/components/TestCard/TestCard.tsx",
+      "generatedFiles": [
+        "src/components/TestCard/CategoryLabel.tsx",
+        "src/components/TestCard/FavoriteButton.tsx",
+        "src/components/TestCard/OldPrice.tsx",
+        "src/components/TestCard/Price.tsx",
+        "src/components/TestCard/ProductImage.tsx",
+        "src/components/TestCard/ProductName.tsx",
+        "src/components/TestCard/Subtitle.tsx",
+        "src/components/TestCard/TestCard.stories.tsx",
+        "src/components/TestCard/TestCard.tsx",
+        "src/components/TestCard/TestCard_Deterministic.tsx"
+      ],
+      "hash": "4c18247b9aeb",
+      "facets": {
+        "structure": "d59fe29b26de",
+        "tokens": "2e3b291847c5",
+        "variants": "",
+        "props": ""
+      },
+      "integratedFingerprint": "de9f817c6f30980b7626d7a4491958ab1b04b8c272e23ee226c93342d92ba5aa",
+      "renderRef": "testcard__4c18247b9aeb"
+    }
+  ]
 }
