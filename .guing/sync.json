@@ -1284,5 +1284,36 @@
       }
     ]
   },
-  "components": []
+  "components": [
+    {
+      "key": "dealscard",
+      "name": "DealsCard",
+      "type": "DealsCard",
+      "label": "DealsCard",
+      "layerId": "61:306",
+      "variants": 0,
+      "path": "src/components/DealsCard/DealsCard.tsx",
+      "generatedFiles": [
+        "src/components/DealsCard/CategoryLabel.tsx",
+        "src/components/DealsCard/CurrentPrice.tsx",
+        "src/components/DealsCard/DealsCard.stories.tsx",
+        "src/components/DealsCard/DealsCard.tsx",
+        "src/components/DealsCard/DealsCard_Deterministic.tsx",
+        "src/components/DealsCard/FavoriteButton.tsx",
+        "src/components/DealsCard/OldPrice.tsx",
+        "src/components/DealsCard/ProductImage.tsx",
+        "src/components/DealsCard/ProductName.tsx",
+        "src/components/DealsCard/ProductSubtitle.tsx"
+      ],
+      "hash": "512f651f01ab",
+      "facets": {
+        "structure": "b37df6366500",
+        "tokens": "2e3b291847c5",
+        "variants": "",
+        "props": ""
+      },
+      "integratedFingerprint": "bb05b42130b9fa3f17c394b73525819ff12f3870ce3522bba3591485ce6bde0b",
+      "renderRef": "dealscard__512f651f01ab"
+    }
+  ]
 }
