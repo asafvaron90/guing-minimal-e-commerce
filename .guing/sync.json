@@ -1284,5 +1284,33 @@
       }
     ]
   },
-  "components": []
+  "components": [
+    {
+      "key": "testtcardd",
+      "name": "TesttCardd",
+      "type": "TesttCardd",
+      "label": "TesttCardd",
+      "layerId": "61:306",
+      "variants": 0,
+      "path": "src/components/TesttCardd/TesttCardd.tsx",
+      "generatedFiles": [
+        "src/components/TesttCardd/FavouriteButton.tsx",
+        "src/components/TesttCardd/PriceTag.tsx",
+        "src/components/TesttCardd/ProductImage.tsx",
+        "src/components/TesttCardd/TesttCardd.assets.ts",
+        "src/components/TesttCardd/TesttCardd.stories.tsx",
+        "src/components/TesttCardd/TesttCardd.tsx",
+        "src/components/TesttCardd/TesttCardd_Deterministic.tsx"
+      ],
+      "hash": "b30f9011a7f4",
+      "facets": {
+        "structure": "9989d5bfa023",
+        "tokens": "2e3b291847c5",
+        "variants": "",
+        "props": ""
+      },
+      "integratedFingerprint": "f932b35c163addbf9bec802f7f6782e593d32c0c66838bc21c9aad9e50a60184",
+      "renderRef": "testtcardd__b30f9011a7f4"
+    }
+  ]
 }
