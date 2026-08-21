@@ -1284,5 +1284,31 @@
       }
     ]
   },
-  "components": []
+  "components": [
+    {
+      "key": "dealcard",
+      "name": "DealCard",
+      "type": "DealCard",
+      "label": "DealCard",
+      "layerId": "61:306",
+      "variants": 0,
+      "path": "src/components/DealCard/DealCard.tsx",
+      "generatedFiles": [
+        "src/components/DealCard/DealCard.assets.ts",
+        "src/components/DealCard/DealCard.stories.tsx",
+        "src/components/DealCard/DealCard.tsx",
+        "src/components/DealCard/DealCard_Deterministic.tsx",
+        "src/components/DealCard/LikeButton.tsx"
+      ],
+      "hash": "bf563a5bdfc8",
+      "facets": {
+        "structure": "afd8fae3e7f8",
+        "tokens": "2e3b291847c5",
+        "variants": "",
+        "props": ""
+      },
+      "integratedFingerprint": "191d225baa2bc87d99ca4f640df29817ad4536339ddf9a8c9a7819c51563cc29",
+      "renderRef": "dealcard__bf563a5bdfc8"
+    }
+  ]
 }

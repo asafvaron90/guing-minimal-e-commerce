@@ -1,11 +1,29 @@
 {
-  "version": "0.0.3",
-  "generatedAt": "2026-08-11T20:43:43.118Z",
-  "components": [],
+  "version": "0.0.4",
+  "generatedAt": "2026-08-21T19:10:34.662Z",
+  "components": [
+    {
+      "name": "DealCard",
+      "path": "src/components/DealCard/DealCard.tsx",
+      "description": "DealCard component",
+      "props": {
+        "className": {
+          "type": "string",
+          "required": false
+        },
+        "style": {
+          "type": "React.CSSProperties",
+          "required": false
+        }
+      },
+      "integratedFingerprint": "191d225baa2bc87d99ca4f640df29817ad4536339ddf9a8c9a7819c51563cc29",
+      "pixelReview": true
+    }
+  ],
   "tokens": {
     "colors": 29,
-    "typography": 22,
-    "radius": 14,
+    "typography": 15,
+    "radius": 10,
     "shadows": 1,
     "elevations": 0,
     "borders": 0,
@@ -17,5 +35,16 @@
     "layoutGrids": 0,
     "figmaStyles": 16,
     "icons": 0
+  },
+  "library": {
+    "id": "mui-v7.3.11",
+    "label": "Material UI",
+    "importPackage": "@mui/material",
+    "familyId": "mui",
+    "releaseId": "mui-v7.3.11",
+    "exactVersion": "7.3.11",
+    "targetRevision": 1,
+    "registryRevision": "mui-v7.3.11-registry.2e795c70ba4ed4a5",
+    "dependencySnapshotHash": "14ef1cd0e66c5d123d02efbad11e9927976d23a099ac83b6148949bba3ea479a"
   }
 }

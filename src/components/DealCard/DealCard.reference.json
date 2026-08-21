@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "subjectNodeId": "61:306",
+  "scale": 2,
+  "logicalBounds": {
+    "x": -1540,
+    "y": -198,
+    "width": 335,
+    "height": 170
+  },
+  "renderBounds": {
+    "x": -1540,
+    "y": -198,
+    "width": 335,
+    "height": 170
+  },
+  "subjectToRenderOrigin": {
+    "x": 0,
+    "y": 0
+  },
+  "captureRect": {
+    "x": 0,
+    "y": 0,
+    "width": 335,
+    "height": 170
+  },
+  "logicalDimensions": {
+    "width": 335,
+    "height": 170
+  },
+  "pixelDimensions": {
+    "width": 670,
+    "height": 340
+  },
+  "requiredFonts": [
+    {
+      "family": "Inter",
+      "style": "Extra Bold",
+      "weight": 800
+    },
+    {
+      "family": "Inter",
+      "style": "Medium",
+      "weight": 500
+    },
+    {
+      "family": "Inter",
+      "style": "Regular",
+      "weight": 400
+    },
+    {
+      "family": "Inter",
+      "style": "Semi Bold",
+      "weight": 600
+    }
+  ],
+  "boundsMode": "render",
+  "background": "transparent",
+  "exportSettings": {
+    "format": "PNG",
+    "contentsOnly": true,
+    "useAbsoluteBounds": false,
+    "colorProfile": "SRGB"
+  }
+}
