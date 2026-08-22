@@ -1284,5 +1284,32 @@
       }
     ]
   },
-  "components": []
+  "components": [
+    {
+      "key": "ttt1",
+      "name": "TTT1",
+      "type": "TTT1",
+      "label": "TTT1",
+      "layerId": "61:306",
+      "variants": 0,
+      "path": "src/components/TTT1/TTT1.tsx",
+      "generatedFiles": [
+        "src/components/TTT1/FavoriteButton.tsx",
+        "src/components/TTT1/ProductImage.tsx",
+        "src/components/TTT1/TTT1.assets.ts",
+        "src/components/TTT1/TTT1.stories.tsx",
+        "src/components/TTT1/TTT1.tsx",
+        "src/components/TTT1/TTT1_Deterministic.tsx"
+      ],
+      "hash": "257e9bf94137",
+      "facets": {
+        "structure": "c42dd76408da",
+        "tokens": "2e3b291847c5",
+        "variants": "",
+        "props": ""
+      },
+      "integratedFingerprint": "ddcbbf6dd97f6b2a141c30fadf8504e81c3efb245b9253548a0c2a9009159ac9",
+      "renderRef": "ttt1__257e9bf94137"
+    }
+  ]
 }
