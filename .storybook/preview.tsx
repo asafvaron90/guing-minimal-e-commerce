@@ -1,3 +1,4 @@
+import { withDesignSystem } from '../src/components/adapters/mui-v7/decorator';
 import React, { useEffect } from 'react';
 import type { Preview } from '@storybook/react';
 import tokens from '../src/design-tokens/tokens.json';
@@ -27,7 +28,7 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [
+  decorators: [withDesignSystem, 
     (Story, context) => {
       const theme = context.globals.theme || 'default';
       useEffect(() => {
